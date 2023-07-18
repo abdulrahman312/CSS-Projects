@@ -1,5 +1,6 @@
 @use "../abstract/functions" as func;
 @use "../abstract/mixins" as *;
+@use "../abstract/variables" as *;
 
 * {
   margin: 0;
@@ -33,4 +34,9 @@ body {
   @include respond(tab-port) {
     padding: 0;
   }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }
